@@ -19,11 +19,11 @@
  
  ## Popup details
  the popup should show 
- -Date of Issue
+<div -Date of Issue
  -Name of the Community
  -Work class group
  -longitude and latitude
- 
+ </div>
  
  
  ## Author
