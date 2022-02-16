@@ -32,7 +32,6 @@ fetch('"https://data.calgary.ca/resource/c2es-76ed.geojson?$where=issueddate ')
 
 const marker = L.marker([51.047097, -114.071719]).addTo(map);
 marker.bindPopup('51.047097, -114.071719').openPopup();
-
    
 
 jQuery(function (){
@@ -89,7 +88,7 @@ jQuery(function (){
            
                markers.clearLayers();
            
-               geojsonLayer = L.geoason(geojson_object, {onEachFeature: function(feature, layer) 
+               geojsonLayer = L.geojson(geojson_object, {onEachFeature: function(feature, layer) 
                    {layer.bindPopup("<p> Date issued: <p>"+ features.properties.issuedate + "<br>" +"<p>Community Name:<p>" + features.properties.communityname +"<br>"
                                +"<p>work class group:<p>" + features.properties.workclass)
                    }});
